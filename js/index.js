@@ -1,7 +1,7 @@
 $(document).ready(function(){
   var lat;
   var lon;
-    $.getJSON("https://ip-api.com/json", function(data2){
+    $.getJSON("http://ip-api.com/json", function(data2){
     lat = data2.lat;
     lon = data2.lon;
    api= "http://api.openweathermap.org/data/2.5/forecast?lat=" + lat + "&lon=" + lon + "&units=imperial&APPID=9c1eb6cdcf29dc3879abecee8f45c7ac";
