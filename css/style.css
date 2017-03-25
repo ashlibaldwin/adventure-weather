@@ -1,13 +1,25 @@
 .day {
-  background: url("../images/night.jpg") no-repeat fixed top center;
+  background: url("../images/day.jpg") no-repeat fixed top center;
   background-size:100%;
   background-height:100% ;
+}
+
+@media (max-width: 600px) {
+  .day {
+    background: url("../images/day-small.jpg");
+  }
 }
 
 .night {
   background: url("../images/night.jpg") no-repeat center center fixed;
   background-size:100%;
   background-height:100%;
+}
+
+@media (max-width: 600px) {
+  .night {
+    background: url("../images/night-small.jpg");
+  }
 }
 
 .words {
@@ -18,3 +30,4 @@
   background-color: rgba(0,0,0,0.6);
   max-width: 300px;
 }
+
