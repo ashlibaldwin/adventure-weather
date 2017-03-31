@@ -7,10 +7,10 @@ $(document).ready(function(){
    api= "http://api.openweathermap.org/data/2.5/forecast?lat=" + lat + "&lon=" + lon + "&units=imperial&APPID=9c1eb6cdcf29dc3879abecee8f45c7ac";
       
 var currentTime = new Date().getHours();
-if (currentTime > 19) {
+if (currentTime >= 19) {
   $("body").addClass('night');
 }
-else {
+else if (currentTime < 19) {
   $("body").addClass('day');
 }
  
