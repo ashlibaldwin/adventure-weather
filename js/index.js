@@ -10,7 +10,7 @@ var currentTime = new Date().getHours();
 if (currentTime > 19) {
   $("body").addClass('night');
 }
-else if (currentTime < 19) {
+else {
   $("body").addClass('day');
 }
  
